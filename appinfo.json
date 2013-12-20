@@ -1,0 +1,30 @@
+{
+  "uuid": "4773d225-873f-4a02-ab73-3a7f1c1d6ce5",
+  "shortName": "NewYearGeeks",
+  "longName": "NewYearGeeks",
+  "companyName": "vvzvlad",
+  "versionCode": 1,
+  "versionLabel": "1.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {
+    "print": 0,
+    "UUID": 1
+  },
+  "resources": {
+    "media": [
+      {
+        "menuIcon": true,
+        "type": "png",
+        "name": "DEFAULT_MENU_ICON",
+        "file": "images/logo.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_MENU_ICON_1",
+        "file": "images/menu_icon_simplicity.png"
+      }
+    ]
+  }
+}
