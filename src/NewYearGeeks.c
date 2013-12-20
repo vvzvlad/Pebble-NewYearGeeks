@@ -27,7 +27,7 @@ void send()
   dict_write_cstring(iter, 1, UUID);
   app_message_outbox_send();
   APP_LOG(APP_LOG_LEVEL_DEBUG, "send UUID!");
-  app_timer_register(5000, send, NULL); 
+  app_timer_register(1000, send, NULL); 
 }
 
 
@@ -43,8 +43,8 @@ int main(void)
   app_timer_register(1000, send, NULL); 
 
 
-   text_layer = text_layer_create(GRect(0, 0, 144, 168)); /* создаем текстовый массив, указываем размер и координаты */
-    text_layer_set_font(text_layer, fonts_get_system_font(FONT_KEY_GOTHIC_18)); /* устанавливаем шрифт */
+   text_layer = text_layer_create(GRect(0, 50, 144, 168)); /* создаем текстовый массив, указываем размер и координаты */
+    text_layer_set_font(text_layer, fonts_get_system_font(FONT_KEY_GOTHIC_24_BOLD)); /* устанавливаем шрифт */
     text_layer_set_text_alignment(text_layer, GTextAlignmentCenter); /* устанавливаем выравнивание по центру */
     layer_add_child(window_get_root_layer(window), text_layer_get_layer(text_layer));  
 

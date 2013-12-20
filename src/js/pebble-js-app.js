@@ -23,7 +23,7 @@ print = print.replace(/\[V/g, "");
 print = print.replace(/\[W/g, "");
 print = print.replace(/\[b/g, "");
 print = print.replace(/\\r/g, "");
-print = print.replace(/\\n/g, "");
+print = print.replace(/\\n/g, " ");
 print = print.replace(/\\t/g, "");
 console.log(print);
 console.log(this.responseText);
